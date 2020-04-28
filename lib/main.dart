@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ninghao_flutter/demo/silver_demo.dart';
 import 'package:ninghao_flutter/demo/view_demo.dart';
 import './demo/drawer_demo.dart';
 import './demo/bottom_navigation_bar_demo.dart';
@@ -12,7 +13,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: SilverDemo(),
       theme: ThemeData(
         primarySwatch: Colors.yellow,
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
@@ -57,7 +58,7 @@ class Home extends StatelessWidget {
             ListViewDemo(),
             // Icon(Icons.change_history, size: 128.0, color: Colors.black12),
             BasicDemo(),
-            Icon(Icons.directions_bike, size: 128.0, color: Colors.black12),
+            SilverDemo(),
             ViewDemo()
           ],
         ),
